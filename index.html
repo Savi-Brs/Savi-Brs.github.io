@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Pictures/2pts.png" type="image/x-icon">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        body { /* Balise (existe déjà) */
+            background-color: whitesmoke;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header, .footer { /* Classe (n'existe pas encore) */
+            background-color: #2a9df4;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex: 2;
+            margin: 20px;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .menu, .main, .right {
+            padding: 20px;
+        }
+
+        .menu {
+            width: 25%;
+            background-color: #d0e7ff;
+            border-right: 1px solid #b0c4de;
+        }
+
+        .menu a {
+            background-color: #2a9df4;
+            padding: 10px;
+            margin-top: 10px;
+            display: block;
+            width: 93%;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            background-color: #1c7dcf;
+        }
+
+        .main{
+            width: 50%;
+            padding: 0 20px;
+            text-align: justify;
+        }
+
+        .right {
+            width: 25%;
+            background-color: #d0e7ff;
+            border-left: 1px solid #b0c4de;
+        }
+
+        h2 {
+            color: #2a9df4;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6; /* Hauteur entre h2 et p */
+        }
+
+        @media (max-width:600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .menu, .main, .right {
+                width: 100%;
+                padding: 15px 0;
+                border-radius: 0;
+            }
+
+            .menu {
+                border-right: none;
+                border-bottom: 1px solid #b0c4de;
+            }
+
+            .right {
+                border-left: none;
+                border-top: 1px solid #b0c4de;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Université Bretagne Sud</h1>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <a href="https://www-facultedseg.univ-ubs.fr/fr/index.html">Faculté Droit Eco-Gestion et IAE</a>
+            <a href="https://www-facultellshs.univ-ubs.fr/fr/index.html">Faculté Lettres, Langues, Sciences Humaines & Sociales</a>
+            <a href="https://www-facultesciences.univ-ubs.fr/fr/index.html">Faculté Sciences & Sciences de l'Ingénieur</a>
+            <a href="https://www-ensibs.univ-ubs.fr/fr/index.html">ENSIBS - Ecole d'Ingénieurs</a>
+            <a href="https://www.iutvannes.fr/">IUT</a>
+        </div>
+        <div class="main">
+            <h2>Présentation</h2>
+            <p>Université entreprenante et engagée, l'UBS développe 4 grandes priorités : Mer & littoraux, Industrie du numérique, santé & matériaux avancés et territoires intelligents.</p>
+            <br>Elle compte 3 Facultés : la Faculté Droit, Sciences Economiques & Gestion à Vannes, la Faculté Lettres, Langues, Sciences Humaines et Sociales à Lorient, et la faculté de Sciences et Sciences de l'Ingénieur à Lorient et Vannes.
+            L'Ecole d'ingénieurs ENSIBS, forme près de 300 élèves ingénieurs autour de 4 spécialités : l'informatique la cybersécurité, les systèmes emnbarqués et les matériaux composites.
+            l'IAE Bretagne Sud se situe à Vannes et forme les managers et les économistes de demain.
+        </div>
+        <div class="right">
+            <h2>Approche pédagogique</h2>
+            <p>Nos objectifs pédagogiques à l'Université Bretagne Sud sont de développer les connaissances académiques 
+                de nos étudiants, mais aussi leurs intelligences sociale, citoyenne, pratique et technologique</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Barusseau. All right reserved.</p>
+    </div>
+</body>
+</html>

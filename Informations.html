@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations - ENSIBS</title>
+     <!-- insérer le Favicon -->
+    <link rel="shortcut icon" href="Pictures/2pts.png" type="image/x-icon">  
+    <!--ajouter un formulaire à une image -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="TP1.html"><img src="Pictures/logoENSIBS.png" alt="Logo" width="250" height="110"></a>
+
+
+    <div class="container_informations">
+        <h2>Plus d'informations</h2>
+        <h3>Découvrir plus d'informations sur notre site : <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations-d-ingenieurs/genie-industriel-4-0.html">ici</a></h3>
+        <iframe src="https://www-ensibs.univ-ubs.fr/fr/index.html"
+        height="300px" width="100%" id="Iframe_ENSIBS"></iframe>
+    </div>
+
+    <div class="container_informations">
+        <h2>Nous contacter</h2>
+        <h3 id="MyfooterJS2">Retrouver nous sur notre site de Lorient.</h3>
+        <script>
+            function myFunction() {
+                document.getElementById("MyfooterJS2").style.fontSize = "35px";
+                document.getElementById("MyfooterJS2").style.color = "black";
+                document.getElementById("MyfooterJS2").style.backgroundColor = "#2980b9";
+                document.getElementById("MyfooterJS2").innerHTML = "Adresse : 17 Bd Flandres Dunkerque 1940, 56100 Lorient";
+            }
+        </script>
+        <button type="button" onclick="myFunction()" id="button-myfooter">Retrouvez nous !</button>
+
+        <!-- Affichage date et heure par JS -->
+        <h2>Dernière consultation</h2>
+        <button type="button" id="button-myfooter-informations" onclick="document.getElementById('consultation').innerHTML = new Date().toLocaleDateString('fr-FR', {weekday:'long', year: 'numeric', month:'long', day:'numeric', hour:'2-digit', second:'2-digit'})">
+            Cliquer ici.
+        </button>
+        <p id="consultation"></p>
+    </div>
+
+</body>
+</html>

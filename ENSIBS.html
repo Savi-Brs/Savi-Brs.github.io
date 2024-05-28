@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Pictures/2pts.png" type="image/x-icon">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0; /* Marge extérieure ou espacement externe */
+            padding: 0; /* Espacement interne */
+        }
+
+        body {
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        header, footer{
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header{
+            font-size: 32px;
+        }
+
+        footer{
+            font-size: 16px;
+        }
+
+        .container{
+            flex: 1;
+            display: grid; /* concevoir une page avec des ligne et colonne */
+            width: 100%;
+            margin: 0;
+        }
+
+        nav, article{
+            padding: 20px;
+        }
+
+        nav {
+            background-color: whitesmoke;
+            flex: 1;
+            font-size: 15px;
+        }
+
+        article{
+            background-color: white;
+            font-size: 18px;
+        }
+
+        nav ul{
+            list-style-type: none; /* Supprime les puces ou numéros par défaut (ordonnée ou non) */
+        }
+        nav ul li{
+            flex: 1;
+        }
+
+        nav ul li a{
+            color: black;
+            font-size: 18px;
+            padding: 15px;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;        
+        }
+
+        nav ul li a:hover{
+            background-color: #004d00;
+            color: white;
+        }
+
+        .btn{
+            display: inline-block; /* Element en ligne */
+            padding: 15px 25px;
+            margin: 5px 0;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            background-color: #004d00;
+            border-radius: 5px;
+            text-decoration: none; /* Enlever le soulignement du texte */
+        }
+
+        .btn:hover{
+            background-color: #003300;
+        }
+
+        @media(min-width:600px) { /* Règle de média appliquée lorsque la largeur de l'écran est d'au moins 600 pixels */
+
+            .container{
+              grid-template-columns: 20% 80%; /* deux colonnes */
+              grid-template-rows: none; /* aucune ligne */  
+            }
+
+            nav {
+                order: 1; /* place en premier dans l'ordre de la grille */
+            }
+
+            article{
+                order: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>ENSIBS</h2>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations/diplome-d-ingenieur-DI/sciences-technologies-sante-STS/diplome-d-ingenieur-genie-industriel-4-0-en-apprentissage-KWKK6ZQQ.html"
+                        class="btn">
+                        Parcours Alterannce
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations/diplome-d-ingenieur-DI/sciences-technologies-sante-STS/diplome-d-ingenieur-genie-industriel-4-0-IGEI00_207.html"
+                        class="btn">
+                        parcours Classique
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <!-- Définit un contenu indépendant -->
+            <h1>Découvrez l'école</h1>
+            <p>Implantée au sein de l'Université de Bretagne-Sud, l'École Nationale Supérieure d'Ingénieurs de
+                Bretagne-Sud (ENSIBS) propose six spécialités sur Lorient et Vannes.</p>
+            <p>L'ENSIBS est une école d'ingénieurs associée au réseau Polytech et toutes ses formations sont habilitées
+                par la Commission des Titres d'Ingénieurs (CTI) et accessibles après un bac +2 ou après le bac, grâce à
+                nos 2 cycles pré-ingénieurs accessibles avec le concours Geipi Polytech.</p>
+            <p>L'ENSIBS forme des ingénieurs aptes à innover et entreprendre. Membre de la Conférence des Directeurs des
+                Grandes Écoles de Bretagne (CDGEB), elle participe au développement de la formation et bénéficie de la
+                synergie avec les Grandes Écoles de la région.</p>
+            <p>Les élèves suivent une formation équilibrée entre cours, travaux dirigés et pratiques qui mêlent
+                enseignements scientifiques, technologiques et en sciences humaines et sociales. L'enseignement met
+                l'accent sur la polyvalence et la pluridisciplinarité. L'ingénieur est formé(e) à la conduite de projet,
+                au management, au travail en réseau.</p>
+        </article>
+
+    </div>
+    <footer>
+        <p>
+            Contactz-nous: contcat@ensibs | Suivez-nous :
+            <!-- Facebook -->
+            <a href="https://www-ensibs.univ-ubs.fr/fr/suivez-nous/facebook.html" aria-label="Facebook"
+                data-social="Facebook" target="_blank">
+                <!-- Twitter -->
+                <a href="https://www-ensibs.univ-ubs.fr/fr/suivez-nous/twitter.html" aria-label="Twitter"
+                    data-social="Twitter" target="_blank">
+        </p>
+    </footer>
+</body>
+
+</html>

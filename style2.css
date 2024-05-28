@@ -1,0 +1,112 @@
+
+/* Styles for the Header */
+header {
+    background-image: url(Pictures/ENSIBS.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* hauteur de l'en-tête */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    transition: height 0.3s; /* Animation de transition pour la hauteur */
+    font-weight: bold;
+ 
+}
+
+p {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 20px; /* Taille */
+}
+
+li {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 18px; /* Taille */
+}
+
+
+
+.ul1 {
+    list-style: none; /* Supprimer les puces par défaut */
+    padding-left: 20px; /* Ajuster la position du texte par rapport à l'image */
+    background-image: url('Pictures/puce.png'); /* Utilisation d'une image personnalisée comme puce */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    background-position: 0 5px; /* Ajuster la position verticale de l'image par rapport au texte */
+    padding-left: 20px; /* Ajuster la position du texte par rapport à l'image */
+    background-size: 16px 16px; /* Redimensionner l'image de la puce */
+}
+
+
+h2 {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 30px; /* Taille */
+}
+
+h3 {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 25px; /* Taille */
+    color: grey;
+
+}
+
+
+
+/* Colonnes */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -20px; /* Compense l'espace entre les colonnes */
+}
+
+.colonne {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Définition de la bordure */
+.img_plq {
+    border: 
+    0.5px solid black; /* Bordure de 2 pixels de large, solide et noire */
+}
+
+
+button {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209,213,219);
+    border-radius: .5rem;
+    color: #111827;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+  }
+  
+  button:hover {
+    background-color: #f9fafb;
+  }
+  
+  button:focus {
+    outline: 2px solid rgba(0,0,0,0.1);
+    outline-offset: 2px;
+  }
+  
+  button:focus-visible {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }

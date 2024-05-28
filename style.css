@@ -1,0 +1,361 @@
+
+/* Styles for the Header */
+header {
+    background-image: url(Pictures/ENSIBS.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* hauteur de l'en-tête */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    transition: height 0.3s; /* Animation de transition pour la hauteur */
+    font-weight: bold;
+ 
+}
+
+p {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 20px; /* Taille */
+}
+
+li {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 18px; /* Taille */
+}
+
+a {
+    text-decoration: none; /* Ne pas souligner les textes avec des liens */
+    color: inherit; /* Garde la couleur héritée du texte */
+}
+
+
+.ul1 {
+    list-style: none; /* Supprimer les puces par défaut */
+    padding-left: 20px; /* Ajuster la position du texte par rapport à l'image */
+    background-image: url('Pictures/puce.png'); /* Utilisation d'une image personnalisée comme puce */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    background-position: 0 5px; /* Ajuster la position verticale de l'image par rapport au texte */
+    padding-left: 20px; /* Ajuster la position du texte par rapport à l'image */
+    background-size: 16px 16px; /* Redimensionner l'image de la puce */
+}
+
+
+h2 {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 30px; /* Taille */
+}
+
+h3 {
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 25px; /* Taille */
+    color: grey;
+
+}
+
+
+
+/* Colonnes */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -20px; /* Compense l'espace entre les colonnes */
+}
+
+.colonne {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Définition de la bordure */
+.img_plq {
+    border: 0.5px solid black; /* Bordure de 2 pixels de large, solide et noire */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+button {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209,213,219);
+    border-radius: .5rem;
+    color: #111827;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+  }
+  
+  button:hover {
+    background-color: #f9fafb;
+  }
+  
+  button:focus {
+    outline: 2px solid rgba(0,0,0,0.1);
+    outline-offset: 2px;
+  }
+  
+  button:focus-visible {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+  
+  /* Styles pour le conteneur du formulaire */
+  .container {
+    color: black;
+    flex-direction: column ;
+    position: absolute;/* Position absolue par rapport à son parent relatif .bg-img */
+    right: 20px;/* Droite fixée à 20px du bord droit */
+    margin: 20px;/* Marge autour du conteneur */
+    max-width: 200px;/* Largeur maximale du conteneur */
+    padding: 16px;/* Espacement interne autour du contenu du conteneur */
+    background-color: white;
+  }
+  /* Styles pour les inputs */
+  input[type=text], input[type=password] {
+    width: 80%;/* Prend toute la largeur du conteneur */
+    padding: 15px;
+    margin-bottom: 22px; /* Marge en bas pour séparer les entrées */    
+    border: none;
+    background: whitesmoke;
+  }
+  /* style du bouton de soumission  */
+  .btn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;/* Padding autour du texte du bouton */
+    border: none;
+    cursor: pointer;
+   width: 100%;/* Largeur complète du conteneur */
+}
+
+.button-style {
+    background-color: green;
+    border: none;
+    color :white;
+    padding : 15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display :inline-block;
+    font-size :18px;
+    margin : 4xp 2px;
+    cursor: pointer;
+    font-weight: bold;
+    min-width: 140px;
+}
+
+main{
+    margin-left: 50px;
+}
+
+.tkt{
+    flex-direction: column;
+}
+
+.tkt a{
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.marge{
+    margin-top: 0px;
+    background-color:whitesmoke;
+    color:green;
+    width: 200px; 
+    padding:20px;             
+    height: auto; 
+    font-size:18px;            
+    margin: 10px;
+}
+
+.hidden { 
+    display: none; 
+} 
+
+
+#Présentation:target, #admission:target, #international:target, #debouches:target { 
+    display: block; 
+}
+
+
+/* Style pour le tableau */
+table {
+    width: 80%;
+    height: 300px;
+    border-collapse: collapse; /* Bordures adjacentes des cellules */
+}
+
+/* Style pour les cellules du tableau */
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-family: Calibri, sans-serif; /* Police */
+    font-size: 17px; /* Taille */
+}
+
+/* Style pour les cellules de l'en-tête */
+th {
+    background-color: #f2f2f2;
+}
+
+.centreG{
+    margin-right: 200px;
+    margin-left: 150px;
+}
+
+.centreD{
+    margin-left: 20px;
+}
+.centreG hr{
+    width: 400px;
+}
+
+.centreD hr{
+    width: 400px;
+    margin-left: 0%;
+}
+
+
+.button-ceremony {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #d5f365;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+   
+  .button-ceremony:hover {
+    box-shadow: 7px 5px 56px -14px #C3D900;
+  }
+   
+  .button-ceremony:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+  }
+
+  .containerMedia{
+    width: 80%;
+    margin: auto;
+  }
+  
+  .video-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .video{
+    flex: 1;
+    margin: 10px;
+  }
+  
+  iframe{
+    width: 100%;
+  
+  height: 350px;
+  }
+
+.médias {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* Style pour le tableau */
+.third-table {
+    border: 1px solid;
+    border-collapse: collapse; /* Bordures adjacentes des cellules */
+    height: 100px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.third-table tr:nth-child(even) {
+    background-color: rgb(150, 212, 212, 0.4);
+}
+
+.third-table th:nth-child(even), .third-table td:nth-child(even) {
+    background-color: rgb(150, 212, 212, 0.4);
+}
+
+#myfooter {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+#myfooterJS {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase; /* Transformer le texte en majuscule */
+    letter-spacing: 2px;
+}
+
+#myfooterJS:hover { /* Styles lorsque l'élément "myfooter est survolé */
+    color: green;
+}
+
+#button-myfooter{
+    display: block;
+    margin: 20px auto;
+    border: black;
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+    border: 5px solid black;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+
+#button-myfooter:hover { /* On passe par dessus le texte */
+    background-color: green;
+}
+
+#Iframe_ENSIBS {
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+}
+
+#Iframe_ENSIBS_a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Iframe_ENSIBS_a:hover {
+    text-decoration: underline;
+}
+
