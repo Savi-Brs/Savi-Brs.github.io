@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Pictures/2pts.png" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulaire Complet</title>
+    <script src="form.js" defer></script>
+</head>
+
+<body>
+    <a href="TP1.html"><img src="Pictures/logoENSIBS.png" alt="Logo" width="250" height="110"></a>
+
+    <h1>Formulaire prise de contact</h1>
+    <form id="contact-form" onsubmit="handleSubmit(event)">
+        <!-- Champ de texte -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <!-- Champ d'Email -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Champ de date -->
+        <label for="date">Date de naissance</label>
+        <input type="date" name="date" id="date"><br><br>
+
+        <!-- Case à cocher -->
+        <label for="formations">Formations souhaitées à l'ENSIBS</label> <!-- Mettre du texte à coté de "selec" -->
+        <select name="formations" id="formations"> <!-- Liste déroulante de choix -->
+            <option value="Cyberdéfense">Cyberdéfense</option>
+            <!-- On ajoute des options à cette liste déroulantes qui sont les choix possibles -->
+            <option value="Energies, Hydrogènes">Energies, Hydrogènes</option>
+            <option value="Génie Civil 4.0">Génie Civil 4.0</option>
+            <option value="Génie Industriel 4.0">Génie Industriel 4.0</option>
+            <option value="Informatique et Cybersécurité">Informatique et Cybersécurité</option>
+            <option value="Mécatronique">Mécatronique</option>
+        </select><br><br>
+
+        <!-- Boutons radio -->
+        <p>Actuellement, vous êtes :</p>
+        <input type="radio" id="1ère" name="annee" value="1ère">
+        <label for="1ère">En 1ère</label>
+        <input type="radio" id="terminale" name="annee" value="terminale">
+        <label for="terminale">Terminale</label>
+        <input type="radio" id="IUT" name="annee" value="IUT">
+        <label for="IUT">IUT</label>
+        <input type="radio" id="master" name="annee" value="master">
+        <label for="master">Master</label>
+        <input type="radio" id="reprise" name="annee" value="reprise">
+        <label for="reprise">Reprise</label>
+        <input type="radio" id="autre" name="annee" value="autre">
+        <label for="autre">Autre</label><br><br>
+
+        <!-- Case à cocher -->
+        <p>Langues parlées :</p>
+        <input type="checkbox" id="francais" name="langues" value="français">
+        <label for="francais">Français</label><br>
+        <input type="checkbox" id="anglais" name="langues" value="anglais">
+        <label for="anglais">Anglais</label><br>
+        <input type="checkbox" id="espagnol" name="langues" value="espagnol">
+        <label for="espagnol">Espagnol</label><br><br>
+
+        <!-- Zone de texte -->
+        <label for="demande">Vous avez une demande spécifique à formuler :</label><br>
+        <textarea name="demande" id="demande" rows="4" cols="50"></textarea><br><br>
+        <!-- Permet de modilser l'espace du texte comme l'on veut -->
+
+        <!-- Boutton de soumission -->
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+
+</html>
